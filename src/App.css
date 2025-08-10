@@ -1,0 +1,72 @@
+/* General reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Smooth font & background */
+body {
+  font-family: 'Inter', sans-serif;
+  background: linear-gradient(135deg, #f5f7fa, #e4ebf5);
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  padding: 2rem;
+}
+
+/* Card style for container */
+.app-container {
+  background: white;
+  border-radius: 16px;
+  padding: 2rem;
+  width: 350px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+  transition: transform 0.2s ease;
+}
+
+.app-container:hover {
+  transform: translateY(-3px);
+}
+
+/* Heading */
+h2 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #2d2d2d;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #f0f0f0;
+  padding-bottom: 0.5rem;
+}
+
+/* Todo list styling */
+ul {
+  list-style: none;
+}
+
+li {
+  background: #f9fafb;
+  padding: 0.75rem 1rem;
+  margin-bottom: 0.5rem;
+  border-radius: 10px;
+  transition: all 0.2s ease;
+  font-size: 0.95rem;
+  display: flex;
+  align-items: center;
+}
+
+li:hover {
+  background: #eef3ff;
+  transform: translateX(4px);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+/* Optional checkmark style */
+li::before {
+  content: "✔";
+  color: #4a90e2;
+  margin-right: 8px;
+  font-size: 0.85rem;
+}
